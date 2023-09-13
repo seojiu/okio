@@ -1,0 +1,84 @@
+.wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 500px;
+  gap: 50px;
+  border: 1px solid black;
+  background-color: var(--color-white);
+}
+
+.contents {
+  width: 80%;
+  display: flex;
+}
+
+.optionWrap {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+}
+
+.dualButtonWrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.singleButtonWrap {
+  display: flex;
+  justify-content: space-between;
+  > button {
+    width: 100%;
+  }
+}
+
+.optionButton {
+  width: 48%;
+  height: 35px;
+  border-radius: 10px;
+  color: var(--color-black);
+  background-color: var(--color-gray-100);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-body-md);
+}
+
+.selected {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+
+.counter {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 20px;
+}
+
+.closeButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid black;
+  transform: translate(50%, -50%);
+}
+
+.addButton {
+  width: 80%;
+  height: 50px;
+  color: #fff;
+  background-color: var(--color-primary);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-display);
+}
